@@ -1,0 +1,62 @@
+site_name: Disqt VPS Wiki
+site_url: https://disqt.github.io/vps-wiki
+repo_url: https://github.com/disqt/vps-wiki
+repo_name: disqt/vps-wiki
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Game Servers:
+    - Overview: game-servers/index.md
+    - CS2: game-servers/cs2.md
+    - Minecraft: game-servers/minecraft.md
+    - Xonotic: game-servers/xonotic.md
+  - Services:
+    - Overview: services/index.md
+    - Discord Bot: services/discord-bot.md
+    - lgsm-info-api: services/lgsm-info-api.md
+    - miaro-scheduler-api: services/miaro-scheduler-api.md
+    - Website: services/website.md
+  - Infrastructure:
+    - Overview: infrastructure/index.md
+    - nginx: infrastructure/nginx.md
+    - Metrics Monitoring: infrastructure/metrics.md
+    - systemd Services: infrastructure/systemd.md
+    - Users & Access: infrastructure/users-and-access.md
+    - Kernel Tuning: infrastructure/kernel-tuning.md
